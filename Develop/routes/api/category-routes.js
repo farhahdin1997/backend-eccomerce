@@ -54,6 +54,7 @@ router.post('/', (req, res) => {
   // create a new category
   Category.create({
     category_name: req.body.category_name
+    //rew.nody - manually input in postman/insomina
   })
     .then(dbCatData => res.json(dbCatData))
     .catch(err => {
