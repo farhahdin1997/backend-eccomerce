@@ -34,11 +34,13 @@ THEN I am able to successfully create, update, and delete data in my database
 
 How to create the schema from the MySQL shell.
 
+https://user-images.githubusercontent.com/81389441/170869879-b548ef8d-5773-4302-8668-205116f717dd.mp4
 
-The walkthrough video must demonstrate how to seed the database from the command line.
+
+How to seed the database from the command line.
 
 
-The walkthrough video must demonstrate how to start the application’s server.
+How to start the application’s server.
 
 
 The walkthrough video must demonstrate GET routes for all categories, all products, and all tags being tested in Insomnia.
