@@ -75,7 +75,7 @@ router.post('/', async (req, res) => {
           tag_id,
         };
       });
-      res.status(200).json({product, message: "Good job! A new product has been created!"});
+      // res.status(200).json({product, message: "Good job! A new product has been created!"});
       return ProductTag.bulkCreate(productTagIdArr);
     }
 
@@ -129,8 +129,6 @@ Product.update(req.body, {
     res.status(400).json(err);
   });
 })
-
- 
 
 
 router.delete('/:id', (req, res) => {
