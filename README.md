@@ -32,23 +32,37 @@ THEN I am able to successfully create, update, and delete data in my database
 
 # Walk Through
 
-How to create the schema from the MySQL shell.
+<b> How to create the schema from the MySQL shell <b>
 
 https://user-images.githubusercontent.com/81389441/170869879-b548ef8d-5773-4302-8668-205116f717dd.mp4
 
 
-How to seed the database from the command line.
+<b> How to seed the database from the command line <b>
+
+https://user-images.githubusercontent.com/81389441/170869958-37030bf1-70f9-4b55-9efa-c1a643eb90e3.mp4
 
 
-How to start the application’s server.
+<b> How to start the application’s server. <b>
+  
+https://user-images.githubusercontent.com/81389441/170870014-5af729f3-e412-4377-bfff-0bd85a929522.mov
 
 
-The walkthrough video must demonstrate GET routes for all categories, all products, and all tags being tested in Insomnia.
-The walkthrough video must demonstrate GET routes for a single category, a single product, and a single tag being tested in Insomnia
-The walkthrough video must demonstrate POST, PUT, and DELETE routes for categories, products, and tags being tested in Insomnia.
 
-Category
+GET routes for all categories, all products, and all tags being tested in Insomnia.
+  
+GET routes for a single category, a single product, and a single tag being tested in Insomnia
 
-Tags
+POST, PUT, and DELETE routes for categories, products, and tags being tested in Insomnia.
 
-Product
+<b> Category <b>
+
+https://user-images.githubusercontent.com/81389441/170870158-9ea7d53d-0a58-4d9f-b9e4-e1c61be931f2.mp4
+
+
+<b> Tags <b>
+  
+https://user-images.githubusercontent.com/81389441/170870237-b1dc03df-88c3-416e-a435-3bae601d4414.mp4
+
+
+
+<b> Product <b>
