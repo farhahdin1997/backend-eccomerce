@@ -12,12 +12,12 @@ router.get('/', (req, res) => {
       attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
     }
   })
-    .then(dbCategoryData => {
-      if(!dbCatData) {
+    .then(categoryData => {
+      if(!categoryData) {
         res.status(404).json({message: 'No categories found'});
         return;
       }
-      res.json(dbCategoryData);
+      res.json(categoryData);
     })
     .catch(err => {
       console.log(err);
@@ -37,12 +37,12 @@ router.get('/:id', (req, res) => {
       attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
     }
   })
-    .then(dbCategoryData => {
-      if(!dbCategoryData) {
+    .then(categoryData => {
+      if(!categoryData) {
         res.status(404).json({message: 'No categories found'});
         return;
       }
-      res.json(dbCategoryData);
+      res.json(categoryData);
     })
     .catch(err => {
       console.log(err);

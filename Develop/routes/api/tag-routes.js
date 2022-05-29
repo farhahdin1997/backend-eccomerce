@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
       attributes: ['product_name', 'price', 'stock', 'category_id']
     }
   })
-    .then(dbTagData => res.json(dbTagData))
+    .then(tagData => res.json(tagData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -31,7 +31,7 @@ router.get('/:id', (req, res) => {
       attributes: ['product_name', 'price', 'stock', 'category_id']
     }
   })
-    .then(dbTagData => res.json(dbTagData))
+    .then(tagData => res.json(tagData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -43,7 +43,7 @@ router.post('/', (req, res) => {
   Tag.create({
     tag_name: req.body.tag_name
   })
-    .then(dbTagData => res.json(dbTagData))
+    .then(tagData => res.json(tagData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -57,12 +57,12 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   })
-    .then(dbTagData => {
-      if (!dbTagData){
-        res.status(404).json({message:'No tag found with this id'});
+    .then(tagData => {
+      if (!tagData){
+        res.status(404).json({message:'tag id not found'});
         return;
       }
-      res.json(dbTagData);
+      res.json(tagData);
     })
     .catch(err => {
       console.log(err);
@@ -77,12 +77,12 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then(dbTagData => {
-    if (!dbTagData) {
-      res.status(404).json({message: 'No tag found with this id'});
+  .then(tagData => {
+    if (!tagData) {
+      res.status(404).json({message: 'Tag id not found'});
       return;
     }
-    res.json(dbTagData);
+    res.json(tagData);
   })
   .catch(err =>{
     console.log(err);
